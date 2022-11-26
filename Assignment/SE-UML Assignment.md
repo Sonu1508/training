@@ -90,5 +90,5 @@ The first state is an idle state from where the process starts. The next states 
 
 During the life cycle of an object (here order object) it goes through the following states and there may be some abnormal exits. This abnormal exit may occur due to some problem in the system. When the entire life cycle is complete, it is considered as a complete transaction as shown in the following figure. The initial and final state of an object is also shown in the following figure.
 
-UML Statechart Diagram
+                                     UML Statechart Diagram
 ![image](https://user-images.githubusercontent.com/95277583/204084396-7299514f-b818-45fe-8044-7f85613f4134.png)
