@@ -27,7 +27,7 @@ CREATE TABLE customers
 
 ## Q.5. Display the name of the current user.
 Ans: </br>
-show user
+show user;
 
 ## Q.6.Display the names of employees whose name starts with alphabet S.
 Ans: </br>
@@ -54,6 +54,14 @@ SELECT DISTINCT EMP.ENAME FROM EMP,EMP E WHERE E.SAL <(SELECT AVG(EMP.SAL) FROM 
 WHERE EMP.EMPNO=E.MGR GROUP BY EMP.ENAME) AND EMP.EMPNO=E.MGR;
 
 ## Q.11. what is sql?
-Ans:
+Ans: SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.
+SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language.
+- SQL Commands
+- The standard SQL commands to interact with relational databases are CREATE, SELECT, INSERT, UPDATE, DELETE and DROP. These commands can be classified into the following groups based on their nature −
+
+DDL - Data Definition Language </br>
+DML - Data Manipulation Language </br>
+DCL - Data Control Language </br>
+TCL-  Transaction Control Language </br>
 
 
