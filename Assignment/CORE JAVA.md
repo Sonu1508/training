@@ -46,31 +46,31 @@ ANS:- Simple: Java is very easy to learn, and its syntax is simple, clean and ea
 - Distributed: Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
 
 
-## Q.4. Write a Java program to calculate Permutation and Combination of 2 numbers.
-ANS:package EXAMPLE;
-import java.util.Scanner;
-public class nprandncr {
-public static int fact(int nUM)
-{
-int fact=1, i;
-for(i=1; i<=nUM; i++)
-{
-fact = fact*i;
-}
-return fact;
-}
-public static void main(String args[])
-{
-int n, r;
-Scanner scan = new Scanner(System.in);
-System.out.print("Enter Value of n : ");
-n = scan.nextInt();
-System.out.print("Enter Value of r : ");
-r = scan.nextInt();
-System.out.print("NCR = " +(fact(n)/(fact(n-r)*fact(r))));
-System.out.print("nNPR = " +(fact(n)/(fact(n-r))));
-}
-}
+## Q.4. Write a Java program to calculate Permutation and Combination of 2 numbers.</br>
+ANS:package EXAMPLE; </br>
+import java.util.Scanner; </br>
+public class nprandncr { </br>
+public static int fact(int nUM) </br>
+{ </br>
+int fact=1, i; </br>
+for(i=1; i<=nUM; i++) </br>
+{ </br>
+fact = fact*i; </br>
+} </br>
+return fact; </br>
+} </br>
+public static void main(String args[]) </br>
+{ </br>
+int n, r; </br>
+Scanner scan = new Scanner(System.in); </br>
+System.out.print("Enter Value of n : "); </br>
+n = scan.nextInt(); </br>
+System.out.print("Enter Value of r : "); </br>
+r = scan.nextInt(); </br>
+System.out.print("NCR = " +(fact(n)/(fact(n-r)*fact(r)))); </br>
+System.out.print("nNPR = " +(fact(n)/(fact(n-r)))); </br>
+} </br>
+} </br>
 
 ## Q.5.DESCRIBE MULTI-THREADING?
 ANS: Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such program is called a thread. So, threads are light-weight processes within a process.
@@ -79,28 +79,27 @@ Threads can be created by using two mechanisms :
 - Implementing the Runnable Interface
 - Thread creation by extending the Thread class
 We create a class that extends the java.lang.Thread class. This class overrides the run() method available in the Thread class. A thread begins its life inside run() method. We create an object of our new class and call start() method to start the execution of a thread. Start() invokes the run() method on the Thread object.
-PROGRAM:
-class MultithreadingDemo extends Thread {
-    public void run()
-    {
-        try {
-            System.out.println(
-                "Thread " + Thread.currentThread().getId()
-                + " is running");
-        }
-        catch (Exception e) {
-            System.out.println("Exception is caught");
-        }
-    }
-}
+PROGRAM:</br>
+class MultithreadingDemo extends Thread { </br>
+    public void run() </br>
+    { </br>
+        try { </br>
+            System.out.println( </br>
+                "Thread " + Thread.currentThread().getId()+ " is running");  </br>
+        } </br>
+        catch (Exception e) { </br>
+            System.out.println("Exception is caught"); </br>
+        } </br>
+    } </br>
+} </br>
  
-public class Multithread {
-    public static void main(String[] args)
-    {
-        int n = 5;
-        for (int i = 0; i < n; i++) {
-            MultithreadingDemo object= new MultithreadingDemo();
-            object.start();
-        }
-    }
-}
+public class Multithread { </br>
+    public static void main(String[] args) </br>
+    { </br>
+        int n = 5; </br>
+        for (int i = 0; i < n; i++) { </br>
+            MultithreadingDemo object= new MultithreadingDemo(); </br>
+            object.start(); </br>
+        } </br>
+    } </br>
+} </br>
