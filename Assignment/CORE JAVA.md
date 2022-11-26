@@ -44,3 +44,63 @@ ANS:- Simple: Java is very easy to learn, and its syntax is simple, clean and ea
 - High Performance: Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc
 - Multithreaded: A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
 - Distributed: Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
+
+
+## Q.4. Write a Java program to calculate Permutation and Combination of 2 numbers.
+ANS:package EXAMPLE;
+import java.util.Scanner;
+public class nprandncr {
+public static int fact(int nUM)
+{
+int fact=1, i;
+for(i=1; i<=nUM; i++)
+{
+fact = fact*i;
+}
+return fact;
+}
+public static void main(String args[])
+{
+int n, r;
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter Value of n : ");
+n = scan.nextInt();
+System.out.print("Enter Value of r : ");
+r = scan.nextInt();
+System.out.print("NCR = " +(fact(n)/(fact(n-r)*fact(r))));
+System.out.print("nNPR = " +(fact(n)/(fact(n-r))));
+}
+}
+
+## Q.5.DESCRIBE MULTI-THREADING?
+ANS: Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such program is called a thread. So, threads are light-weight processes within a process.
+Threads can be created by using two mechanisms : 
+- Extending the Thread class 
+- Implementing the Runnable Interface
+- Thread creation by extending the Thread class
+We create a class that extends the java.lang.Thread class. This class overrides the run() method available in the Thread class. A thread begins its life inside run() method. We create an object of our new class and call start() method to start the execution of a thread. Start() invokes the run() method on the Thread object.
+PROGRAM:
+class MultithreadingDemo extends Thread {
+    public void run()
+    {
+        try {
+            System.out.println(
+                "Thread " + Thread.currentThread().getId()
+                + " is running");
+        }
+        catch (Exception e) {
+            System.out.println("Exception is caught");
+        }
+    }
+}
+ 
+public class Multithread {
+    public static void main(String[] args)
+    {
+        int n = 5;
+        for (int i = 0; i < n; i++) {
+            MultithreadingDemo object= new MultithreadingDemo();
+            object.start();
+        }
+    }
+}
