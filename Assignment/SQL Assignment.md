@@ -43,14 +43,12 @@ select ename,sal from emp where job='SALESMAN' and sal>(select
 max(sal) from emp
 where job='CLERK');
 
-## Q.9.  Display the names of the employees who earn highest salary in their
-respective departments.
+## Q.9.  Display the names of the employees who earn highest salary in their respective departments.
 Ans: </br>
 select ename,sal,deptno from emp where sal in(select max(sal) from
 emp group by deptno);
 
-## Q.10.Display those managers name whose salary is more than average salary of
-his employee?
+## Q.10.Display those managers name whose salary is more than average salary of his employee?
 Ans: </br>
 SELECT DISTINCT EMP.ENAME FROM EMP,EMP E WHERE E.SAL <(SELECT AVG(EMP.SAL) FROM EMP
 WHERE EMP.EMPNO=E.MGR GROUP BY EMP.ENAME) AND EMP.EMPNO=E.MGR;
