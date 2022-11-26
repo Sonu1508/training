@@ -27,3 +27,20 @@ It is a micro platform that is dedicated to mobile applications.
 
 4) JavaFX
 It is used to develop rich internet applications. It uses a lightweight user interface API.
+
+
+## Q.3.DESCRIBE THE FEATURES OF JAVA?
+ANS:- Simple: Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language.
+- Object-Oriented: Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.
+- Portable: It is a portable language.
+- Platform independent: Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+- Secured: Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+1. No explicit pointer
+2. Java Programs run inside a virtual machine sandbox
+- Robust: 1.It uses strong memory management.
+2. There is a lack of pointers that avoids security problems.
+3. Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+4. There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+- High Performance: Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc
+- Multithreaded: A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+- Distributed: Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.
