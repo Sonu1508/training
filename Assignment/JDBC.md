@@ -28,3 +28,10 @@ public Statement createStatement()throws SQLException
 The executeQuery() method of Statement interface is used to execute queries to the database. This method returns the object of ResultSet that can be used to get all the records of a table.
 Syntax of executeQuery() method
 public ResultSet executeQuery(String sql)throws SQLException  
+
+5) Close the connection object
+By closing connection object statement and ResultSet will be closed automatically. The close() method of Connection interface is used to close the connection.
+Syntax of close() method
+public void close()throws SQLException  
+
+
