@@ -25,5 +25,5 @@ input[type="text"]:focus{
 	cursor: pointer;
 }
 .filtered{
-	display: none !important;		// bootstrap me display ko !important diya gaya hai mtlb ki isko override karna nhi hai to agar !important nhi lagaoge to ye rule apply nhi hoga 
+	display: none !important;		 
 }
