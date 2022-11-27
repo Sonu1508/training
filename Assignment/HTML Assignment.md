@@ -10,44 +10,20 @@ HTML documents contain two things:
 2. tags
 When a web browser reads an HTML document, the browser reads it from top to bottom and left to right. HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.
 
-Syntax
-<tag> content </tag>  
-Content is placed between tags to display data on the web page.
-
-## Q.3.How many types of heading does an HTML contain?
-The HTML contains six types of headings which are defined with the <h1> to <h6> tags. Each type of heading tag displays different text size from another. So, <h1> is the largest heading tag and <h6> is the smallest one. For example:
-
-<h1>Heading no. 1</h1>    
-<h2>Heading no. 2</h2>    
-<h3>Heading no. 3</h3>    
-<h4>Heading no. 4</h4>    
-<h5>Heading no. 5</h5>    
-<h6>Heading no. 6</h6>    
   
- ## Q.4.How to create a hyperlink in HTML?
+ ## Q.3.How to create a hyperlink in HTML?
 The HTML provides an anchor tag to create a hyperlink that links one page to another page. These tags can appear in any of the following ways:
 - Unvisited link - It is displayed, underlined and blue.
 - Visited link - It is displayed, underlined and purple.
 - Active link - It is displayed, underlined and red.
 
   
-  ## Q.5.What is the use of a span tag? Give one example.
+## Q.4.What is the use of a span tag? Give one example.
 The span tag is used for following things:
 - For adding color on text
 - For adding background on text
 - Highlight any color text
-- Example:
-<p>  
-<span style="color:#ffffff;">  
-In this page we use span.  
-</span>  
-</p> 
-  
-## Q.6.CREATE A SIMPLE HTML PAGE?
-  ANS:
- <Html>    
-<Head>    
-</Head>  
-<Body>    
-</Body>  
-</Html>  
+
+## Q.5.What are HTML Attributes?
+Ans. HTML attributes provide additional information about HTML elements. They are defined directly after the tag name. They only appear in opening tags and not in closing tags. 
+HTML attributes usually consist of name/value pairs like name=”value”. The Attribute values should always be enclosed in quotation marks. The name parameter takes the name of the property that is to be assigned to the element. The value takes the property value or extent of the property names that can be aligned over the element. 
